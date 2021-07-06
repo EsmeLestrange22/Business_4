@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Business Rooms</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" type="image/jpg" href="Business.png"/>
+<link rel= "stylesheet" href= "chat.css">
+    </head>
+    <body>  <div class="container">
+        <button id="logout" onclick="logout()" ondblclick= "logout_final()" class="glyphicon glyphicon-log-out btn btn-danger" >Logout</button>
+    <div id= "warn_logout"></div>
+        <center>
+            <h1  class="header">	
+              Business Chat!
+                <sup>
+                    <img src="Business.png">
+                </sup>
+            </h1>
+            <h2 id="user_name" class="color_white"></h2>
+            <div id= "output"></div>
+            <div id= "text">
+<label> Send: </label> <br> <br>
+<input id= "text_msg" class= "form-control " placeholder="Type Your idea, marketing stradegy, or any kind of text here"> <br> <br> <br>
+<button onclick= "send_function()" class= "btn btn-warning">Send!</button>            
+</div>
+            </center>
+            </div>
+        </body>
+  <script src= "pg3.js"></script>
+</html>
